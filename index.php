@@ -8,7 +8,7 @@
 
 $age = 21;
 $wantedgood = "mugs";
-$provisionedActivities = array("Specs",	"Mugs","Sausage rolls");
+$items = array("Specs",	"Mugs","Sausage rolls");
 
 ?>
 <!DOCTYPE html>
@@ -96,9 +96,20 @@ $provisionedActivities = array("Specs",	"Mugs","Sausage rolls");
     }
 */
 
-    $input = array("Specs",	"Mugs","Sausage rolls");
-$rand_keys = array_rand($input, 1);
-echo $input[$rand_keys[0]];
+    $mugs = 0;
+    $spacs = 0;
+    $roll = 0;
+
+    for($i = 1; $i < 31;  $i++){
+
+        $item = $items[array_rand($items)];
+        echo $item;
+        /*do{
+            $mugs = $mugs + 1;
+            print "mugs today";
+        }while($mugs <= 7);*/
+    }
+
     ?>
 </p>
 
