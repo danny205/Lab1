@@ -7,7 +7,9 @@
  */
 
 $age = 21;
-$product = "mugs"
+$wantedgood = "mugs";
+$provisionedActivities = array("Specs",	"Mugs","Sausage rolls");
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,7 +35,7 @@ $product = "mugs"
     }
 
     echo "</br>";
-    switch ($product){
+    switch ($wantedgood){
 
         case "specs":
             echo "You have to be over 16 to buy specs";
@@ -46,6 +48,19 @@ $product = "mugs"
         case "sausage rolls":
             echo "You have to be over 21 to but sausage rolls";
             break;
+
+    }
+
+    echo "</br>";
+
+    foreach($provisionedActivities as $x){
+        if($x == "Mugs"){
+            print "<p>Hugs</p>";
+        }elseif($x == "Sausage rolls"){
+            print "";
+        }else{
+            print "<p>$x</p>";
+        }
 
     }
 
