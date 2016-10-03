@@ -32,7 +32,7 @@ $product = "mugs"
 
     }
 
-
+    echo "</br>";
     switch ($product){
 
         case "specs":
@@ -40,7 +40,7 @@ $product = "mugs"
             break;
 
         case "mugs":
-            echo "You have tobe over 18 to buy mugs";
+            echo "You have to be over 18 to buy mugs";
             break;
 
         case "sausage rolls":
