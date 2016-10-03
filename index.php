@@ -62,8 +62,7 @@ $provisionedActivities = array("Specs",	"Mugs","Sausage rolls");
             print "<p>$x</p>";
         }
 
-    }*/
-
+    }
     for($i = 1; $i < 31;  $i++){
 
         $arrayTwo = array("2","4","6","8","10","12","14","16","18","20","22","24","26","28","30");
@@ -95,10 +94,12 @@ $provisionedActivities = array("Specs",	"Mugs","Sausage rolls");
         echo "</br>";
 
     }
+*/
 
-
+    $input = array("Specs",	"Mugs","Sausage rolls");
+$rand_keys = array_rand($input, 1);
+echo $input[$rand_keys[0]];
     ?>
-
 </p>
 
 </body>
