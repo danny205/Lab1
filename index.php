@@ -7,6 +7,7 @@
  */
 
 $age = 21;
+$product = "mugs"
 ?>
 <!DOCTYPE html>
 <html>
@@ -29,6 +30,19 @@ $age = 21;
 
         echo "You can buy specs, mugs and sausage rolls";
 
+    }
+
+
+    switch ($age){
+        case "specs":
+            echo "You have to be over 16 to buy specs";
+            break;
+        case "mugs":
+            echo "You have tobe over 18 to buy mugs";
+            break;
+        case "sausage rolls":
+            echo "You have to be over 21 to but sausage rolls";
+            break;
     }
 
     ?>
