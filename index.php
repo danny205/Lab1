@@ -99,17 +99,17 @@ $items = array("Specs",	"Mugs","Sausage rolls");
     $mugs = 0;
     $spacs = 0;
     $roll = 0;
-    $item = $items[array_rand($items)];
-    echo $item;
-    /* for($i = 1; $i < 31;  $i++){
 
+    for($i = 1; $i < 31;  $i++){
 
-         do{
+        $item = $items[array_rand($items)];
+        echo $item."</br>";
+
+         /*do{
              $mugs = $mugs + 1;
              print "mugs today";
-         }while($mugs <= 7);
-    }*/
-
+         }while($mugs <= 7);*/
+    }
     ?>
 </p>
 
