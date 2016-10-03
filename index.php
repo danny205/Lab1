@@ -21,7 +21,7 @@ $age = 21;
 
         echo "You can buy specs";
 
-    }elseif($age >= 18 AND $age <= 21){
+    }elseif($age >= 18 AND $age < 21){
 
         echo "You can buy specs and mugs";
 
