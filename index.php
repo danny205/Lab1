@@ -34,15 +34,19 @@ $product = "mugs"
 
 
     switch ($age){
+
         case "specs":
             echo "You have to be over 16 to buy specs";
             break;
+
         case "mugs":
             echo "You have tobe over 18 to buy mugs";
             break;
+
         case "sausage rolls":
             echo "You have to be over 21 to but sausage rolls";
             break;
+        
     }
 
     ?>
