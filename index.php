@@ -20,7 +20,7 @@ $provisionedActivities = array("Specs",	"Mugs","Sausage rolls");
 
     <?php
 
-    if($age >= 16 AND $age <= 18){
+    /*if($age >= 16 AND $age <= 18){
 
         echo "You can buy specs";
 
@@ -62,7 +62,38 @@ $provisionedActivities = array("Specs",	"Mugs","Sausage rolls");
             print "<p>$x</p>";
         }
 
+    }*/
+
+    for($i = 1; $i < 31;  $i++){
+
+        $arrayTwo = array("2","4","6","8","10","12","14","16","18","20","22","24","26","28","30");
+        $arrayFour = array("4","8","12","16","20","24","28");
+        $arrayThree = array("3","6","9","12","15","18","21","24","27","30");
+
+        if(in_array($i, $arrayTwo)){
+
+            if(in_array($i, $arrayFour)){
+
+                echo "On Day ".$i." Specs and sausage rolls are available";
+
+            }else{
+
+                echo "On Day ".$i." Specs are available";
+
+            }
+
+        }elseif(in_array($i, $arrayThree)){
+
+            echo "On Day ".$i." Mugs are available";
+
+        }else{
+
+            echo "On Day ".$i." no products are available";
+
+        }
+
     }
+
 
     ?>
 
