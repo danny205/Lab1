@@ -15,11 +15,11 @@
         echo "working";
     }
 
-    $sql_query = "SELECT * FROM superheros  WHERE superpower LIKE '%l aser%' ";
+    $sql_query = "SELECT * FROM marvelmovies  WHERE year '2003' ";
     $result = $db->query($sql_query);
 
     while($row = $result->fetch_array()){
-        echo "<p>" . $row['superheroName' ] . "</p>";
+        echo "<p>".$row['title' ]."</p>";
     }
 
     $result->close();
