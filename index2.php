@@ -10,7 +10,6 @@ $age = 21;
 $wantedgood = "mugs";
 $items = array("Specs",	"Mugs","Sausage rolls");
 
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,7 +20,94 @@ $items = array("Specs",	"Mugs","Sausage rolls");
 
     <?php
 
+    /*if($age >= 16 AND $age <= 18){
 
+        echo "You can buy specs";
+
+    }elseif($age >= 18 AND $age < 21){
+
+        echo "You can buy specs and mugs";
+
+    }elseif($age >= 21){
+
+        echo "You can buy specs, mugs and sausage rolls";
+
+    }
+
+    echo "</br>";
+    switch ($wantedgood){
+
+        case "specs":
+            echo "You have to be over 16 to buy specs";
+            break;
+
+        case "mugs":
+            echo "You have to be over 18 to buy mugs";
+            break;
+
+        case "sausage rolls":
+            echo "You have to be over 21 to but sausage rolls";
+            break;
+
+    }
+
+    echo "</br>";
+
+    foreach($provisionedActivities as $x){
+        if($x == "Mugs"){
+            print "<p>Hugs</p>";
+        }elseif($x == "Sausage rolls"){
+            print "";
+        }else{
+            print "<p>$x</p>";
+        }
+
+    }
+    for($i = 1; $i < 31;  $i++){
+
+        $arrayTwo = array("2","4","6","8","10","12","14","16","18","20","22","24","26","28","30");
+        $arrayFour = array("4","8","12","16","20","24","28");
+        $arrayThree = array("3","6","9","12","15","18","21","24","27","30");
+
+        if(in_array($i, $arrayTwo)){
+
+            if(in_array($i, $arrayFour)){
+
+                echo "On Day ".$i." Specs and sausage rolls are available";
+
+            }else{
+
+                echo "On Day ".$i." Specs are available";
+
+            }
+
+        }elseif(in_array($i, $arrayThree)){
+
+            echo "On Day ".$i." Mugs are available";
+
+        }else{
+
+            echo "On Day ".$i." no products are available";
+
+        }
+
+        echo "</br>";
+
+    }
+*/
+
+    $mugs = 0;
+    $spacs = 0;
+    $roll = 0;
+
+    for($i = 1; $i < 31;  $i++){
+
+         do{
+             $item = $items[array_rand($items)];
+             echo $item." today </br>";
+             if($item = "Mugs"){}
+         }while($mugs <= 7 AND $specs <= 7 AND $roll <= 7);
+    }
     ?>
 </p>
 
