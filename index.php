@@ -15,10 +15,10 @@
 
         <div id="menu">
             <a href="/">HOME</a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="">ALL MOVIES</a>
+            <a href="">MARVEL STUDIOS</a>
+            <a href="">MOVIES AFTER 2010</a>
+            <a href="">X-MEN</a>
         </div>
 
     </div>
