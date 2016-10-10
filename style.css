@@ -1,5 +1,5 @@
 body{
-
+    font-family: 'Open Sans', sans-serif;
 }
 #container{
     width:90%;
@@ -11,6 +11,6 @@ body{
     overfow:hidden;
 }
 #container #top #title{
-    fot-size:30px;
+    font-size:30px;
     font-weight:700;
 }
