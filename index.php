@@ -15,8 +15,8 @@
         echo "working";
     }
 
-    $sql = "SELECT title FROM marvelmovies  WHERE yearReleased '2003'";
-    $result = $conn->query($sql);
+    $sql = "SELECT title FROM marvelmovies  WHERE yearReleased='2003'";
+    $result = $con->query($sql);
 
     if ($result->num_rows > 0) {
 
@@ -28,7 +28,7 @@
     } else {
         echo "0 results";
     }
-    $conn->close();
+    $con->close();
 
     ?>
 </p>
