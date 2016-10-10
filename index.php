@@ -102,13 +102,11 @@ $items = array("Specs",	"Mugs","Sausage rolls");
 
     for($i = 1; $i < 31;  $i++){
 
-        $item = $items[array_rand($items)];
-        echo $item."</br>";
-
-         /*do{
-             $mugs = $mugs + 1;
-             print "mugs today";
-         }while($mugs <= 7);*/
+         do{
+             $item = $items[array_rand($items)];
+             echo $item." today </br>";
+             if($item = "Mugs"){}
+         }while($mugs <= 7 AND $specs <= 7 AND $roll <= 7);
     }
     ?>
 </p>
