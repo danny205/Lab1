@@ -15,14 +15,20 @@
         echo "working";
     }
 
-    $sql_query = "SELECT * FROM marvelmovies  WHERE yearReleased '2003' ";
-    $result = $db->query($sql_query);
+    $sql = "SELECT title FROM marvelmovies  WHERE yearReleased '2003'";
+    $result = $conn->query($sql);
 
-    while($row = $result->fetch_array()){
-        echo "<p>".$row['title' ]."</p>";
+    if ($result->num_rows > 0) {
+
+        while($row = $result->fetch_assoc()) {
+            echo "title: " . $row["title"]. ",";
+            echo "</br>";
+        }
+
+    } else {
+        echo "0 results";
     }
-
-    $result->close();
+    $conn->close();
 
     ?>
 </p>
