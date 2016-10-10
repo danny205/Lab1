@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head></head>
-<body>
+<head>
 
-<p>
+    <link rel="stylesheet" type="text/css" href="/style.css"/>
+
+</head>
+<body>
+<div id="container">
+    <div id="top">
+
+        <div id="title">MARVEL SITE</div>
+
+        <div id="menu">
+            <a href="/">HOME</a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+
+    </div>
+
     <?php
 
     $con = mysqli_connect("us-cdbr-azure-southcentral-f.cloudapp.net","b42d75f25c6292","43152099","dannydb");
@@ -14,7 +31,7 @@
         echo "working";
     }
 
-    $sql = "SELECT title FROM marvelmovies";
+    $sql = "SELECT title FROM marvelmovies ";
     $result = $con->query($sql);
 
     if ($result->num_rows > 0) {
@@ -29,8 +46,8 @@
     }
     $con->close();
 
-    ?>
-</p>
+?>
+    </div>
 
 </body>
 </html>
