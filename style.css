@@ -9,8 +9,19 @@ body{
 }
 #container #top{
     overfow:hidden;
+    padding:30px;
 }
 #container #top #title{
     font-size:30px;
     font-weight:700;
+}
+#container #top #menu{
+   width:100%;
+}
+#container #top #menu a{
+    width:calc(100% / 5);
+    text-decoration: none;
+}
+#container #middle{
+    overflow:hidden;
 }
