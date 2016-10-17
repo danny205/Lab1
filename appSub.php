@@ -17,8 +17,9 @@ include('dbconnect.php');
 </head>
 <body>
 
-Welcome <?php echo $_GET["name"]; ?><br>
-Your email address is: <?php echo $_GET["email"]; ?>
+Name: <?php echo $_GET["first"]; echo " "; echo $_GET["second"]; ?><br>
+Gender: <?php echo $_GET["gender"]; ?>
+Power: <?php echo $_GET["power"]; ?>
 
 </body>
 </html>

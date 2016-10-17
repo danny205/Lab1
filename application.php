@@ -17,8 +17,10 @@
 </head>
 <body>
 <form action="appSub.php" method="get">
-    Name: <input type="text" name="name"><br>
-    E-mail: <input type="text" name="email"><br>
+    Firstname: <input type="text" name="first"><br>
+    Secondname: <input type="text" name="second"><br>
+    Gender: <input type="text" name="gender"><br>
+    Power: <input type="text" name="power"><br>
     <input type="submit">
 </form>
 </body>
