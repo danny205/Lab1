@@ -8,4 +8,5 @@
 
 $planet = $_GET['planet'];
 echo "Hello " . $planet . ".";
+echo “The query is “ . $planet . “ and the type is “ . $planet”;
 ?>
