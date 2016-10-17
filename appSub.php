@@ -23,7 +23,7 @@ $gender = $_POST["gender"];
 $power = $_POST["power"];
 
 
-echo "Name = {$firstname} {$surname}. Gender = {$gender}. Power = {$power}.";
+echo $power;
 ?>
 </body>
 </html>
