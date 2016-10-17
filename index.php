@@ -27,7 +27,8 @@
 
         <?php
 
-        include (dbconnect.php);
+        include(dbconnect.php);
+
         $sql = "SELECT title FROM marvelmovies ";
         $result = $con->query($sql);
 
@@ -41,7 +42,7 @@
         } else {
             echo "0 results";
         }
-        $con->close();
+        
 
         ?>
 
