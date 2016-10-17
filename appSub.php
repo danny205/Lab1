@@ -18,7 +18,7 @@ include('dbconnect.php');
 <body>
 
 Name: <?php echo $_GET["first"]; echo " "; echo $_GET["second"]; ?><br>
-Gender: <?php echo $_GET["gender"]; ?>
+Gender: <?php echo $_GET["gender"]; ?><br>
 Power: <?php echo $_GET["power"]; ?>
 
 </body>
