@@ -17,13 +17,13 @@ include('dbconnect.php');
 </head>
 <body>
 <?php
-$firstname = $_POST["forename"];
+$firstname = $_GET["forename"];
 $surname = $_POST["surname"];
 $gender = $_POST["gender"];
 $power = $_POST["power"];
 
 
-echo $power;
+echo $firstname;
 ?>
 </body>
 </html>
