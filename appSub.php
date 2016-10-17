@@ -17,7 +17,7 @@ include('dbconnect.php');
 </head>
 <body>
 <?php
-$firstname = $_POST['firstname'];
+$firstname = $_POST['forename'];
 $surname = $_POST['surname'];
 $gender = $_POST['gender'];
 $power = $_POST['power'];
