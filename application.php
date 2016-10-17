@@ -17,10 +17,10 @@
 </head>
 <body>
 <form action="appSub.php" method="post">
-    <label>Forename</label><input type=“text” name=“forename”>
-    <label>Surname</label><input type=“text” name=“surname”>
-    <label>Gender</label><input type=“text” name=“gender”>
-    <label>Super power</label><input type=“text” name=“power”>
+    <input placeholder="firstname" type=“text” name=“forename”>
+    <input placeholder="surname"type=“text” name=“surname”>
+    <input placeholder="gender" type=“text” name=“gender”>
+    <input placeholder="power" type=“text” name=“power”>
     <input type="submit" value="Submit">
 </form>
 </body>
