@@ -16,12 +16,10 @@
 
 </head>
 <body>
-<form action="appSub.php" method="post">
-    <input placeholder="firstname" type=“text” name=“forename”>
-    <input placeholder="surname"type=“text” name=“surname”>
-    <input placeholder="gender" type=“text” name=“gender”>
-    <input placeholder="power" type=“text” name=“power”>
-    <input type="submit" value="Submit">
+<form action="appSub.php" method="get">
+    Name: <input type="text" name="name"><br>
+    E-mail: <input type="text" name="email"><br>
+    <input type="submit">
 </form>
 </body>
 </html>
