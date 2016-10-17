@@ -6,6 +6,6 @@
  * Time: 13:29
  */
 
-$plannet = $GET_[“plannet”];
-echo "Hello ".$plannet.".";
+$planet = $GET_[“planet”];
+echo "Hello " . $planet . ".";
 ?>
